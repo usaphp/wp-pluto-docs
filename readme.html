@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Index page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=1200">
+
+        <script type="text/javascript" src="//use.typekit.net/gfm7lvm.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel='stylesheet' href='css/normalize.css'>
+<link rel='stylesheet' href='css/main.css'>
+        <script src='js/vendor/modernizr-2.6.2.min.js'></script>
+    </head>
+    <body>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-42904928-1', 'usaphp.github.io');
+          ga('send', 'pageview');
+
+        </script>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+<!-- Add your site or application content here -->
+<div class='container'>
+  <div class='side-menu-w'>
+    <h2 class='table-of-contents-header'>
+  <i class='icon-reorder'></i>
+  Table of contents
+</h2>
+<ul class='table-of-contents'>
+  <li>
+    <a href='#docs_intro'>Introduction</a>
+  </li>
+  <li>
+    <a href='#docs_file_structure'>File structure</a>
+  </li>
+  <li>
+    <a href='#docs_theme_installation'>Theme Installation</a>
+  </li>
+  <li>
+    <a href='#docs_customization'>Theme Customization</a>
+    <ul>
+      <li>
+        <a href='#docs_customization'>Scheme Selection</a>
+      </li>
+      <li>
+        <a href='#docs_custom_fonts'>Custom Fonts</a>
+      </li>
+      <li>
+        <a href='#docs_menu_sidebar'>Menu & Sidebar</a>
+      </li>
+      <li>
+        <a href='#docs_navigation'>Navigation</a>
+      </li>
+      <li>
+        <a href='#docs_footer'>Footer</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href='#docs_custom_colors'>Custom Colors</a>
+    <ul>
+      <li>
+        <a href='#docs_customization'>Body</a>
+      </li>
+      <li>
+        <a href='#docs_customization'>Menu</a>
+      </li>
+      <li>
+        <a href='#docs_customization'>Sidebar</a>
+      </li>
+      <li>
+        <a href='#docs_customization'>Other</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href='#docs_fonts'>FAQ</a>
+  </li>
+</ul>
+
+  </div>
+  <div class='container-i'>
+    <h1 id='docs_intro'>Theme Pluto Documentation</h1>
+    <p>
+      Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to contact me via email <a href="mailto:tamik@soziev.com">tamik@soziev.com</a>. Thanks so much!
+    </p>
+    <h2 id='docs_file_structure'>File structure</h2>
+    <p>
+      Here is a list of files and folder you receive with a purchase of Theme Pluto:
+    </p>
+    <div class='archive-w'>
+  <div class='archive'>Downloaded File</div>
+</div>
+<ul class='list-of-files'>
+  <li class='archive'>
+    <strong>theme_pluto.zip</strong>
+    <span>The main zip archive file which is going to be used for theme installation.</span>
+    <ul>
+      <li class='folder-closed'>
+        assets
+        <span>Contains assets for the theme (images, fonts, css, less and other resources)</span>
+      </li>
+      <li class='folder-closed'>
+        images
+        <span>Images used for custom post types in admin and for demo data</span>
+      </li>
+      <li class='folder-opened'>
+        inc
+        <ul>
+          <li class='folder-closed'>
+            js_composer
+            <span>Premium page builder plugin <a href="http://codecanyon.net/item/visual-composer-for-wordpress/242431" target="_blank">( visit website )</a></span>
+          </li>
+          <li class='folder-closed'>
+            js_composer_extend
+            <span>Extending a page builder</span>
+          </li>
+          <li class='folder-closed'>
+            lessphp
+            <span>PHP Processor for LESS css engine <a href="http://leafo.net/lessphp/" target="_blank">( visit website )</a></span>
+          </li>
+          <li class='folder-closed'>
+            shortcodes_inc
+            <span>Shortcodes for framed items</span>
+          </li>
+          <li class='file'>
+            custom_post_types.php
+            <span>Defines custom post types ( Testimonials, Pricing, Portfolio, Team Members, Slides )</span>
+          </li>
+          <li class='file'>
+            custom_sidebars.php
+            <span>Defines custom sidebars</span>
+          </li>
+          <li class='file'>
+            custom_widgets.php
+            <span>Defines custom widgets</span>
+          </li>
+          <li class='file'>
+            db_queries.php
+            <span>Custom functions to access custom post types</span>
+          </li>
+          <li class='file'>
+            helper.php
+            <span>Helper functions to used in various parts of theme</span>
+          </li>
+          <li class='file'>
+            less_variables.php
+            <span>Define variables for LESS css engine <a href="http://lesscss.org/" target="_blank">( visit website )</a></span>
+          </li>
+          <li class='file'>
+            shortcodes.php
+            <span>Custom shortcodes for theme venera</span>
+          </li>
+          <li class='file'>
+            twitter_bootstrap_nav_walker.php
+            <span>Wordpress walker that generates navigation with bootstrap layout</span>
+          </li>
+          <li class='file'>
+            wp-less.php
+            <span>Main file to parse LESS css</span>
+          </li>
+        </ul>
+      </li>
+      <li class='folder-closed'>
+        js
+        <span>Javascript files for theme</span>
+      </li>
+      <li class='folder-closed'>
+        languages
+        <span>Should contain translation files for this theme</span>
+      </li>
+      <li class='folder-opened'>
+        less
+        <ul>
+          <li class='folder-closed'>
+            bootstrap
+            <span>Bootstrap framework styles <a href="http://twitter.github.io/bootstrap/" target="_blank">( visit website )</a></span>
+          </li>
+          <li class='folder-closed'>
+            font-awesome
+            <span>Iconed font Font Awesome styles <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">( visit website )</a></span>
+          </li>
+          <li class='folder-closed'>
+            inc
+            <span>Contains all less css files included into style.less</span>
+          </li>
+          <li class='folder-closed'>
+            js_composer_custom
+            <span>Custom styles for js composer page builder</span>
+          </li>
+          <li class='file'>
+            custom_flexslider.less
+            <span>Custom styles for flexslider</span>
+          </li>
+          <li class='file'>
+            custom_mixins.less
+            <span>Some custom mixins used throughout the theme</span>
+          </li>
+          <li class='file'>
+            style.less
+            <span>Main stylesheet file for this theme which gets compiled into style.css</span>
+          </li>
+        </ul>
+      </li>
+      <li class='file'>
+        comments.php
+        <span>Comments template</span>
+      </li>
+      <li class='file'>
+        content.php
+        <span>Content for blog posts</span>
+      </li>
+      <li class='file'>
+        content-audio.php
+        <span>Content for audio format posts</span>
+      </li>
+      <li class='file'>
+        content-quote.php
+        <span>Content for quote format posts</span>
+      </li>
+      <li class='file'>
+        footer.php
+        <span>The template for displaying footer</span>
+      </li>
+      <li class='file'>
+        functions.php
+        <span>Main file for theme, defines all the functions related to theme venera</span>
+      </li>
+      <li class='file'>
+        header.php
+        <span>The header of our theme</span>
+      </li>
+      <li class='file'>
+        image.php
+        <span>The template for displaying image attachments</span>
+      </li>
+      <li class='file'>
+        index.php
+        <span>The most generic template file in a theme</span>
+      </li>
+      <li class='file'>
+        page-blog.php
+        <span>Blog list page template</span>
+      </li>
+      <li class='file'>
+        page.php
+        <span>The template for displaying all pages</span>
+      </li>
+      <li class='file'>
+        search.php
+        <span>The template for displaying search results pages.</span>
+      </li>
+      <li class='file'>
+        searchform.php
+        <span>The template for displaying search forms.</span>
+      </li>
+      <li class='file'>
+        single-content.php
+        <span>Content for single pages.</span>
+      </li>
+      <li class='file'>
+        single-content-audio.php
+        <span>Content for single audio pages.</span>
+      </li>
+      <li class='file'>
+        single.php
+        <span>The template for displaying all single posts.</span>
+      </li>
+      <li class='file'>
+        style.css
+        <span>Compiled stylesheet file from style.less</span>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+    <h2 id='docs_theme_installation'>Theme Installation</h2>
+    <p>
+      In this section I will walk you through the process of Theme Pluto installation. In order to install the theme - you will need admin access to your wordpress site. It is very easy to install a theme and should not take you more then 10 minutes.
+    </p>
+    <h2 id='docs_theme_install'>Installing your new theme</h2>
+    <h3>
+      <i class='icon-youtube-play'></i>
+      Video Tutorial:
+    </h3>
+    <iframe src="http://player.vimeo.com/video/71118538?title=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    <h3>
+      <i class='icon-list-ol'></i>
+      Step by step guide:
+    </h3>
+    <ol>
+      <li>Unzip the archive file which you just downloaded from ThemeForest.</li>
+      <li>Login to Wordpress admin for your website.</li>
+      <li>Go to <strong>"Appearance"</strong> link in the side menu.</li>
+      <li>
+        Then click the <strong>"Add New"</strong> button (or the "Install Themes" for older versions).
+        <img alt='' class='screenshot' src='img/docs_theme_install_1.png'>
+      </li>
+      <li>
+        Click on the <strong>"Upload Theme"</strong> link
+        <img alt='' class='screenshot' src='img/docs_theme_install_2.png'>
+      </li>
+      <li>
+        Now click on the button which says <strong>"Choose File"</strong>
+      </li>
+      <li>
+        Locate the file called <strong>pluto.zip</strong> and click <strong>"Install Now"</strong> button.
+        <img alt='' class='screenshot' src='img/docs_theme_install_3.png'>
+      </li>
+      <li>
+        Once the installation is complete - click the <strong>"Activate"</strong> link.
+        <img alt='' class='screenshot' src='img/docs_theme_install_4.png'>
+      </li>
+      <li>
+        Pluto requires some of the plugins to be installed in order for it to function. Just follow the prompts on the top of the screen and install and activate those plugins by clicking on "Begin Installing Plugins" link.
+        <img alt='' class='screenshot' src='img/docs_theme_install_6.png'>
+        <img alt='' class='screenshot' src='img/docs_theme_install_7.png'>
+      </li>
+      <li>
+        Well done! You have successfully activated your new theme. You should see something like this on your screen:
+        <img alt='' class='screenshot' src='img/docs_theme_install_5.png'>
+      </li>
+    </ol>
+    <h2 id='docs_customization'>Theme Customization</h2>
+    <p>This theme is fully customizable, it comes with a powerfull admin framework which allows you to edit fonts, colors and many more just by using your mouse.</p>
+    <h3 id='docs_color_scheme'>Changing color scheme</h3>
+    <p>We have prepared multiple color schemes for you, you can select a color scheme and then adjust it by setting colors and fonts manually which will override default theme settings. Here we will cover how to change a color scheme.</p>
+    <h4>
+      <i class='icon-list-ol'></i>
+      Step by step guide:
+    </h4>
+    <ul>
+      <li>Login to your wordpress admin panel</li>
+      <li>
+        Click on "Options" page from a side menu
+        <img alt='' class='screenshot' src='img/docs_options_1.png'>
+      </li>
+      <li>
+        Now you can see multiple predefined color schemes, select the one you like and click "Save Options" button.
+        <img alt='' class='screenshot' src='img/docs_options_2.png'>
+      </li>
+      <li>
+        After you saved changes you can go to homepage and the new color scheme should be applied
+      </li>
+    </ul>
+    <h3 id='docs_color_scheme'>Custom Fonts</h3>
+    <ul>
+      <li>
+        By default theme uses Google fonts, however you can use a premium Adobe Typekit font library.
+        <img alt='' class='screenshot' src='img/docs_options_3.png'>
+      </li>
+      <li>
+        You have to copy/paste the url of the tag you receive from Google Fonts library.
+        <img alt='' class='screenshot' src='img/docs_options_4.png'>
+      </li>
+      <li>
+        Same goes for <strong>font family</strong>, copy/paste the font family name you receive from Google Fonts.
+        <img alt='' class='screenshot' src='img/docs_options_5.png'>
+      </li>
+    </ul>
+    <h3 id='docs_menu_sidebar'>Menu & Sidebar</h3>
+    <p>On the menu and sidebar settings panel you can select where you want the menu and sidebar to appear: left, right or on top of the page. It is also an important piece of configuration because you set the logo and logo text for your website here. Just click on the image selector button and upload your logo.</p>
+    <img alt='' class='screenshot' src='img/docs_options_6.png'>
+    <h3 id='docs_navigation'>Navigation</h3>
+    <p>In this panel you can set the type of navigation you want to use. <strong>Unique</strong> - navigation where previous and next post links are located on top and bottom of the post itself, comes very handy for readability. <strong>Classic</strong> - standard navigation type with links for next and previous posts located on the bottom of the post.</p>
+    <img alt='' class='screenshot' src='img/docs_options_7.png'>
+    <h3 id='docs_footer'>Footer</h3>
+    <p>Footer section is controlling the text which is being output in the footer of the website, as well as the google analytics tracking code.</p>
+    <img alt='' class='screenshot' src='img/docs_options_8.png'>
+    <h2 id='docs_custom_colors'>Custom Colors</h2>
+    <p>You can change default colors of the theme by simply clicking the checkbox <strong>"Enable custom colors"</strong>, after you click it you can see four tabs start to appear next to the current tab. These tabs control every piece of customization available.</p>
+    <img alt='' class='screenshot' src='img/docs_options_9.png'>
+    <h3 id='docs_custom_menu'>Body</h3>
+    <p>Custom styles controlling body appearance of the website.</p>
+    <img alt='' class='screenshot' src='img/docs_options_10.png'>
+    <ul>
+      <li>
+        <strong>Body Background Image</strong>
+        Select the image to be on the background of your website
+      </li>
+      <li>
+        <strong>Body Background Color</strong>
+        Select the color for the background of your website
+      </li>
+      <li>
+        <strong>Body Background Style</strong>
+        If you use dark background image or color, use dark style, otherwise use light.
+      </li>
+    </ul>
+    <h3 id='docs_custom_menu'>Menu</h3>
+    <p>Custom styles controlling body appearance of the website.</p>
+    <img alt='' class='screenshot' src='img/docs_options_14.png'>
+    <ul>
+      <li>
+        <strong>Menu Background Image</strong>
+        Select the image to be on the background of the menu
+      </li>
+      <li>
+        <strong>Menu Background Color</strong>
+        Select the color for the background of the menu
+      </li>
+      <li>
+        <strong>Menu Background Style</strong>
+        If you use dark background image or color for the menu, use dark style, otherwise use light.
+      </li>
+    </ul>
+    <h3 id='docs_custom_menu'>Sidebar</h3>
+    <p>Custom styles controlling body appearance of the website.</p>
+    <img alt='' class='screenshot' src='img/docs_options_11.png'>
+    <ul>
+      <li>
+        <strong>Sidebar Background Image</strong>
+        Select the image to be on the background of sidebar
+      </li>
+      <li>
+        <strong>Sidebar Background Color</strong>
+        Select the color for the background of sidebar
+      </li>
+      <li>
+        <strong>Sidebar Background Style</strong>
+        If you use dark background image or color for the sidebar, use dark style, otherwise use light.
+      </li>
+    </ul>
+    <h3 id='docs_custom_menu'>Other</h3>
+    <p>Custom styles controlling body appearance of the website.</p>
+    <img alt='' class='screenshot' src='img/docs_options_12.png'>
+    <ul>
+      <li>
+        <strong>Highlight Accents</strong>
+        Accents of colors, you can find on widgets under headers and on the side menu just above the social icons.
+      </li>
+      <li>
+        <strong>Top Body Highlights</strong>
+        Color for highlight line on top of the page
+      </li>
+    </ul>
+    <h2 id='docs_faq'>FAQ</h2>
+    <ul>
+      <li>
+        <strong>I am trying to change a color scheme or color settings but that does not work and nothing happens. Why is that happening?</strong>
+        <p>
+          There could be two possible reasons behind it:
+          Folder “wp-content/uploads” is not writable by server. Make sure you change its permissions to 775.
+          You should increase a memory limit in php.ini by adding/changing the following line: memory_limit = 128M
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+        <script src='js/vendor/jquery-1.10.2.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/main.js'></script>
+    </body>
+</html>
