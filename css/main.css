@@ -30,18 +30,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 36px;
-  line-height: 50.4px;
+  line-height: 50px;
   border-bottom: 1px solid #e6e6e6; }
 
 h2 {
   font-size: 28px;
-  line-height: 39.2px;
+  line-height: 39px;
   border-bottom: 1px solid #e6e6e6;
   margin-top: 80px; }
 
 h3 {
   font-size: 24px;
-  line-height: 33.6px;
+  line-height: 34px;
   border-bottom: 1px solid #e6e6e6; }
   h3 i {
     font-size: 20px;
@@ -92,7 +92,8 @@ img.screenshot {
     padding: 0 3em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    padding-bottom: 50px; }
   .container .side-menu-w {
     width: 30%;
     padding-left: 20px;
@@ -109,6 +110,13 @@ img.screenshot {
 
 .table-of-contents {
   font-size: 16px; }
+  .table-of-contents > li {
+    margin-bottom: 10px; }
+  .table-of-contents ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 12px; }
 
 .list-of-files {
   padding-left: 70px; }
@@ -180,9 +188,28 @@ img.screenshot {
 
 .note {
   font-size: 16px;
-  line-height: 22.4px;
+  line-height: 22px;
   color: #777;
   font-weight: 100;
   background-color: #f9f8f1;
-  padding: 5px;
+  padding: 15px;
   margin-top: 5px; }
+  .note.red {
+    background-color: #ED4E4B;
+    color: #fff; }
+
+.code-label {
+  background-color: #eee;
+  box-shadow: 0px 0px 0px 1px #aaaaaa;
+  padding: 0px 5px;
+  font-size: 16px;
+  border-radius: 4px; }
+
+.container-i ul li {
+  margin-bottom: 20px; }
+
+footer.copyright {
+  padding: 30px;
+  border-top: 1px solid #aaa;
+  text-align: center;
+  font-size: 16px; }

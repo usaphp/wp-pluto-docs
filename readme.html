@@ -72,7 +72,7 @@
     </ul>
   </li>
   <li>
-    <a href='#docs_custom_colors'>Custom Colors</a>
+    <a href='#docs_custom_colors_easy'>Custom Colors (Easy)</a>
     <ul>
       <li>
         <a href='#docs_customization'>Body</a>
@@ -87,6 +87,9 @@
         <a href='#docs_customization'>Other</a>
       </li>
     </ul>
+  </li>
+  <li>
+    <a href='#docs_custom_colors_devs'>For Developers</a>
   </li>
   <li>
     <a href='#docs_fonts'>FAQ</a>
@@ -361,7 +364,7 @@
     <h3 id='docs_color_scheme'>Custom Fonts</h3>
     <ul>
       <li>
-        By default theme uses Google fonts, however you can use a premium Adobe Typekit font library.
+        By default theme uses Google fonts, however you can use a premium Adobe Typekit font library or myFonts.com library.
         <img alt='' class='screenshot' src='img/docs_options_3.png'>
       </li>
       <li>
@@ -376,13 +379,27 @@
     <h3 id='docs_menu_sidebar'>Menu & Sidebar</h3>
     <p>On the menu and sidebar settings panel you can select where you want the menu and sidebar to appear: left, right or on top of the page. It is also an important piece of configuration because you set the logo and logo text for your website here. Just click on the image selector button and upload your logo.</p>
     <img alt='' class='screenshot' src='img/docs_options_6.png'>
-    <h3 id='docs_navigation'>Navigation</h3>
-    <p>In this panel you can set the type of navigation you want to use. <strong>Unique</strong> - navigation where previous and next post links are located on top and bottom of the post itself, comes very handy for readability. <strong>Classic</strong> - standard navigation type with links for next and previous posts located on the bottom of the post.</p>
+    <p class='note'><strong>NOTE:</strong> By default the menu is only visible on single post pages and full width index. If you want to make menu visible on your homepage - you have to go to "Options -> Menu/Sidebar" and check the checkbox which says "show sidebar on masonry page".</p>
+    <img alt='' class='screenshot' src='img/docs_options_15.png'>
+    <h3 id='docs_navigation'>Navigation & Pagination</h3>
+    <p>In this panel you can set the type of navigation you want to use for single posts and index pages.</p>
+    <h5>Index Pages:</h5>
+    <ul>
+      <li><strong>Infinite Scroll</strong> - infinite scroll pagination uses AJAX to load next set of posts when the user scrolls to the bottom of the page</li>
+      <li><strong>Infinite with Button</strong> - loads a next set of posts using AJAX when a user clicks 'load more posts' button</li>
+      <li><strong>Paginated Links</strong> - classic links to all of the pages of the blog posts.</li>
+      <li><strong>Default Links</strong> - default Wordpress styled links to next/previous posts.</li>
+    </ul>
+    <h5>Single Pages:</h5>
+    <ul>
+      <li><strong>Unique</strong> - navigation where previous and next post links are located on top and bottom of the post itself, comes very handy for readability.</li>
+      <li><strong>Classic</strong> - standard navigation type with links for next and previous posts located on the bottom of the post.</li>
+    </ul>
     <img alt='' class='screenshot' src='img/docs_options_7.png'>
     <h3 id='docs_footer'>Footer</h3>
     <p>Footer section is controlling the text which is being output in the footer of the website, as well as the google analytics tracking code.</p>
     <img alt='' class='screenshot' src='img/docs_options_8.png'>
-    <h2 id='docs_custom_colors'>Custom Colors</h2>
+    <h2 id='docs_custom_colors_easy'>Custom Colors (Easy Method)</h2>
     <p>You can change default colors of the theme by simply clicking the checkbox <strong>"Enable custom colors"</strong>, after you click it you can see four tabs start to appear next to the current tab. These tabs control every piece of customization available.</p>
     <img alt='' class='screenshot' src='img/docs_options_9.png'>
     <h3 id='docs_custom_menu'>Body</h3>
@@ -403,7 +420,7 @@
       </li>
     </ul>
     <h3 id='docs_custom_menu'>Menu</h3>
-    <p>Custom styles controlling body appearance of the website.</p>
+    <p>Custom styles controlling appearance of the side/top menu.</p>
     <img alt='' class='screenshot' src='img/docs_options_14.png'>
     <ul>
       <li>
@@ -420,7 +437,7 @@
       </li>
     </ul>
     <h3 id='docs_custom_menu'>Sidebar</h3>
-    <p>Custom styles controlling body appearance of the website.</p>
+    <p>Custom styles controlling appearance of the sidebar.</p>
     <img alt='' class='screenshot' src='img/docs_options_11.png'>
     <ul>
       <li>
@@ -437,7 +454,7 @@
       </li>
     </ul>
     <h3 id='docs_custom_menu'>Other</h3>
-    <p>Custom styles controlling body appearance of the website.</p>
+    <p>Other color settigns.</p>
     <img alt='' class='screenshot' src='img/docs_options_12.png'>
     <ul>
       <li>
@@ -449,19 +466,57 @@
         Color for highlight line on top of the page
       </li>
     </ul>
+    <h2 id='docs_custom_colors_devs'>Custom Colors (For Developers)</h2>
+    <p>
+      When you want to change appearance of your website beyong the setting in admin you can do so by modifying <strong>$scheme_vars</strong> array. Here is how you do it:
+    </p>
+    <ul>
+      <li>If you open file: <strong>"/inc/colors/default.php"</strong> you will see a <strong>$scheme_vars</strong> array there, each key of the array holds a color setting for alms every element of the theme.</li>
+      <li>Now in order for you to make changes and have them saved in the next version - you have to open file <strong>"/extend/custom_scheme_vars.php"</strong> and copy the <span class="code-label">$scheme_vars['KEY_YOU_WANT_TO_CHANGE']</span class="code-label"> into this file and assign it the value you want to be used on your site.</li>
+      <li>Save the file and refresh the page - you should see an updated color settings.</li>
+    </ul>
+    <h4>Example:</h4>
+    <p>
+      So let me give you an example: say you want to change a border styling for post, say you want to remove it completely. Here is what you have to do:
+      <ol>
+        <li>Open "/inc/colors/default.php" file and search for a $scheme_vars[ 'postBorder' ] array key.</li>
+        <li>Copy this line ( $scheme_vars[ 'postBorder' ]  = '1px solid #d1d7dc'; )</li>
+        <li>Paste it at the end of '/extend/custom_scheme_vars.php' file</li>
+        <li>Change '1px solid #d1d7dc' to 'none' in the custom_scheme_vars.php file</li>
+        <li>Save the file, and now the post border is gone :)</li>
+      </ol>
+    </p>
+    <p class='note'><strong>Note: </strong>Unless you set a "enable custom colors" in admin and tried to change the same element's style it will override whatever you put in custom_scheme_vars.php</p>
+    <p class='note red'><strong>Important!: </strong> Make sure you backup <strong>custom_scheme_vars.php</strong> on your computer after you've added your custom colors to it <strong>before</strong> you update the theme, and once you install an updated theme - just paste the file you saved back into the <strong>"extend"</strong> folder.</p>
     <h2 id='docs_faq'>FAQ</h2>
     <ul>
       <li>
         <strong>I am trying to change a color scheme or color settings but that does not work and nothing happens. Why is that happening?</strong>
         <p>
           There could be two possible reasons behind it:
-          Folder “wp-content/uploads” is not writable by server. Make sure you change its permissions to 775.
-          You should increase a memory limit in php.ini by adding/changing the following line: memory_limit = 128M
+          Folder "wp-content/uploads" is not writable by server. Make sure you change its permissions to 775.
+          You should increase a memory limit in php.ini by adding/changing the following line: memory_limit = 512M
+        </p>
+      </li>
+      <li>
+        <strong>I am seeing an error: Fatal error: Class 'lessc' not found in /pluto/inc/less-variables.php on line 3</strong>
+        <p>
+          Looks like you are using really old version of PHP, make sure to install at least version PHP 5.3
+        </p>
+      </li>
+      <li>
+        <strong>I love how customizable is Pluto but I want more options.</strong>
+        <p>
+          There are two options for it, you can either add your custom styles to <strong>"/extend/custom-styles.less"</strong> file, or if you want to change a default variables which control styling - <a href="#docs_custom_colors_devs">read this info</a>
         </p>
       </li>
     </ul>
+    <div class='note red'>Make sure to backup both <strong>custom-styles.less</strong> and <strong>custom_scheme_vars.php</strong> before you re-install or update the theme. And paste them back in once you updated the theme.</div>
   </div>
 </div>
+        <footer class="copyright">
+          Theme Pluto - Copyright Osetin Inc. 2014
+        </footer>
         <script src='js/vendor/jquery-1.10.2.min.js'></script>
 <script src='js/plugins.js'></script>
 <script src='js/main.js'></script>
